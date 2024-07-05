@@ -164,6 +164,19 @@ body {
   font-weight: var(--fw-500);
   border-radius: 0 25px;
   transition: var(--transition-2);
+  animation: pulse 2s infinite; /* Aplica la animación de pulsación */
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .btn-1 {
@@ -176,7 +189,11 @@ body {
   border-radius: 25px 25px;
   transition: var(--transition-2);
   text-align: center;
+  display: inline-block;
+  animation: pulse 1s infinite; /* Aplica la animación de pulsación */
 }
+
+
 
 :is(.btn, .btn-1):is(:hover, :focus) {
   background-position: right;
@@ -500,6 +517,7 @@ body {
 .perfil p {
   padding: 0px 20px 15px 20px;
   border-bottom: 1px solid #808080;
+  text-align: center;
 }
 
 .perfil:hover .content{
@@ -1139,7 +1157,7 @@ transform: scale(1.09);
   height:60px;
   line-height: 63px;
   bottom:25px;
-  right:25px;
+  left:25px;
   background:#25d366;
   color:#FFF;
   border-radius:50px;
@@ -1159,3 +1177,20 @@ transform: scale(1.09);
       line-height: 66px;
 }
 }
+
+
+.video-responsive {
+	height: 0;
+	overflow: hidden;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	position: relative;
+	}
+.video-responsive iframe, .video-responsive object, .video-responsive embed {
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	}
+
