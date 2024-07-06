@@ -491,7 +491,7 @@ body {
 }
 
 .service-card .perfil {
-  background: hsla(0, 0%, 0%, 0.7); /* Corregir la sintaxis del color */
+  background: hsla(0, 0%, 0%, 0.559); /* Corregir la sintaxis del color */
   position: absolute;
   top: 0;
   left: 0;
@@ -503,7 +503,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  opacity: 0;
+  opacity: 1;
   transition: opacity 0.5s ease;
 }
 
@@ -522,7 +522,6 @@ body {
 
 .perfil:hover .content{
   top:0;
-
 }
 
 .service-card:hover img {
@@ -542,11 +541,11 @@ transform: scale(1.09);
   transition: var(--transition-1);
 }
 
-.service-card:hover .card-icon { background-color: var(--winter-sky); }
+.service-card:hover .card-icon { background-color: var(--initial); }
 
 .service-card .card-icon ion-icon {
   font-size: 5rem;
-  color: var(--winter-sky);
+  color: var(--initial);
   --ionicon-stroke-width: 20px;
   transition: var(--transition-1);
 }
@@ -911,10 +910,11 @@ transform: scale(1.09);
 
 @media (min-width: 768px) {
 
+
   /**
    * REUSED STYLE
    */
-
+  
   .container { max-width: 720px; }
 
 
